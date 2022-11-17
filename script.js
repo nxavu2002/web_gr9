@@ -1,10 +1,9 @@
 let searchBtn = document.querySelector('#search-btn');
 let searchBar = document.querySelector('.search-bar-container');
 let formBtn = document.querySelector('#login-btn');
+let loginForm = document.querySelector('.login-form-container');
 let formClose = document.querySelector('#form-close');
 let videoBtn = document.querySelectorAll('.vid-btn');
-const loginForm = document.querySelector('.login-form-container');
-const form = document.querySelector('.Form')
 
 
 // Tìm kiếm
@@ -21,13 +20,6 @@ formBtn.addEventListener('click', () =>{
 formClose.addEventListener('click', () =>{
     loginForm.classList.remove('active');
 });
-loginForm.addEventListener ('click', () =>{
-    loginForm.classList.remove('active');
-});
-
-form.addEventListener('click', function(event) {
-    event.stopPropagation()
-})
 
 // video
 videoBtn.forEach(btn =>{
@@ -42,6 +34,27 @@ videoBtn.forEach(btn =>{
 
 // Phần slider
 var swiper = new Swiper(".aboutus-slider", {
+    spaceBetween: 15,
+    loop:true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+    },
+});
+
+// Phần slider
+var swiper = new Swiper(".hotel-slider", {
     spaceBetween: 15,
     loop:true,
     autoplay: {

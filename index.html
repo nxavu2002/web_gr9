@@ -17,14 +17,20 @@
 
     <div id="menu-bar" class="fas fa-bars"></div>
 
-    <a href="#" class="logo"><span>R</span>yokou</a>
+    <a href="#" class="logo">
+        <img src="images/logo.png" alt="" class="logo-img" >
+        <p>
+            <span>R</span>yokou
+        </p>
+    </a>
 
     <nav class="navbar">
         <a href="#home">home</a>
         <a href="#tour">tour</a>
-        <a href="#blog">blog</a>
         <a href="#specialties">specialties</a>
+        <a href="#hotel">hotel</a>
         <a href="#aboutus">about us</a>
+        <a href="Blog.html">blog</a>
         <a href="#contact">contact</a>
     </nav>
 
@@ -53,8 +59,8 @@
         <input type="submit" value="Đăng nhập" class="btn">
         <input type="checkbox" id="remember">
         <label for="remember">Lưu thông tin đăng nhập</label>
-        <p>Quên mật khẩu? <a href="#">Bấm vào đây</a></p>
-        <p>Chưa có tài khoản? <a href="#">Đăng ký</a></p>
+        <p>Quên mật khẩu <a href="#">Bấm vào đây</a></p>
+        <p>Chưa có tài khoản <a href="#">Đăng ký</a></p>
     </form>
 
 </div>
@@ -63,17 +69,16 @@
 
 <section class="home" id="home">
 
-    <div class="content">
-        <h3>RYOKOU</h3>
-        <p>Trải nghiệm và tận hưởng</p>
-    </div>
-
     <div class="controls">
-        <span data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
     </div>
 
     <div class="video-container">
-        <video src="images/vid-2.mp4" id="video-slider" loop autoplay muted></video>
+        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
     </div>
 
 </section>
@@ -105,7 +110,7 @@
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price"> 1.100.000 VND <span>1.250.000 VND</span> </div>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.html" class="btn">Đặt ngay</a>
             </div>
         </div>
 
@@ -122,7 +127,7 @@
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price"> 700.000 VND <span>900.000 VND</span> </div>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.html" class="btn">Đặt ngay</a>
             </div>
         </div>
 
@@ -130,7 +135,7 @@
             <img src="images/huế.jpg" alt="">
             <div class="content">
                 <h3> <i class="fas fa-map-marker-alt"></i> Huế </h3>
-                <p>Thành phố Huế là kinh đô phong kiến cuối cùng của Việt Nam</p>
+                <p>Thành phố Huế là kinh đô phong kiến cuối cùng của Việt Nam.</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -139,7 +144,7 @@
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price"> 590.000 VND <span>700.000 VND</span> </div>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.html" class="btn">Đặt ngay</a>
             </div>
         </div>
 
@@ -147,7 +152,7 @@
             <img src="images/đà nẵng.jpg" alt="">
             <div class="content">
                 <h3> <i class="fas fa-map-marker-alt"></i> Đà Nẵng </h3>
-                <p>Đà Nẵng - Thành phố du lịch xanh sạch đẹp, một điểm dừng chân lý tưởng của bạn</p>
+                <p>Đà Nẵng - Thành phố du lịch xanh sạch đẹp, một điểm dừng chân lý tưởng của chúng ta trong kỳ nghỉ.</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -156,7 +161,7 @@
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price"> 670.000 VND <span>850.000 VND</span> </div>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.html" class="btn">Đặt ngay</a>
             </div>
         </div>
 
@@ -173,7 +178,7 @@
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price"> 310.000 VND <span>340.000 VND</span> </div>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.html" class="btn">Đặt ngay</a>
             </div>
         </div>
 
@@ -190,62 +195,13 @@
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price"> 780.000 VND <span>850.000 VND</span> </div>
-                <a href="book.html" class="btn">book now</a>
+                <a href="book.html" class="btn">Đặt ngay</a>
             </div>
         </div>
 
     </div>
 
 </section>
-
-<!-- Blog  -->
-
-<section class="blog" id="blog">
-
-    <h1 class="heading">
-        <span>B</span>
-        <span>l</span>
-        <span>o</span>
-        <span>g</span>
-    </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/Du lịch hà giang.jpg" alt="" height="300" width="400">
-            <h3>Du lịch Hà Giang</h3>
-            <p>Hà Giang, vùng biên giới với những cảnh đẹp chinh phục biết bao nhiêu du khách tới thăm và khám phá.</p>
-            <a href="https://onevivu.vn/anh-dep-ha-giang/" class="btn">xem bài viết</a>
-        </div>
-        <div class="box">
-            <img src="images/du lịch phú quốc.jpg" alt="" height="300" width="400">
-            <h3>du lịch Phú Quốc</h3>
-            <p>Chia sẻ lịch trình du lịch Phú Quốc tự túc 4 ngày 3 đêm và 3 ngày 2 đêm tự túc</p>
-            <a href="https://dulichbui24.com/kinh-nghiem/du-lich-mien-nam/du-lich-phu-quoc/lich-trinh-du-lich-phu-quoc.html" class="btn">Xem bài viết</a>
-        </div>
-        <div class="box">
-            <img src="images/du lịch thông minh.jpg" alt="" height="300" width="400">
-            <h3>Blogger Nguyễn Tùng Lâm: “Hãy đi du lịch một cách thông minh và có ý thức!”</h3>
-            <p>Được thành lập vào ngày 21 tháng 7 năm 2016, dulichbui.org (gọi tắt là DLB) đã trở thành địa chỉ quen thuộc cho người đam mê du lịch...</p>
-            <a href="https://iprice.vn/xu-huong/phong-cach-song/blogger-nguyen-tung-lam-hay-di-du-lich-mot-cach-thong-minh-va-co-y-thuc/" class="btn">Xem bài viết</a>
-        </div>
-        <div class="box">
-            <img src="images/du lịch đẹp.jpg" alt="" height="300" width="400">
-            <h3>Travel blogger nữ: Đi là phải đẹp!</h3>
-            <p>Gia tài của họ là những chuyến đi khắp Việt Nam và nước ngoài, những câu chuyện trải nghiệm đáng giá...</p>
-            <a href="https://tcdulichtphcm.vn/chuyen-hay/travel-blogger-nu-di-la-phai-dep-c17a17942.html" class="btn">xem bài viết</a>
-        </div>
-        <div class="box">
-            <img src="images/top du lịch.jpg" alt="" height="300" width="400">
-            <h3>Top 10 điểm đến yêu thích nhất ở Việt Nam</h3>
-            <p>Việt Nam có nhiều địa điểm du lịch tuyệt vời thu hút du khách trong nước và quốc tế. Trong đó, Hội An, Huế, TP.HCM, Đà Lạt...</p>
-            <a href="https://vtbay.vn/top-10-diem-den-yeu-thich-nhat-o-viet-nam-duoc-web-du-lich-lon-nhat-the-gioi-binh-chon-bid153.html" class="btn">xem bài viết</a>
-        </div>
-    </div>
-
-</section>
-
-
 <!-- Đặc sản -->
 
 <section class="specialties" id="specialties">
@@ -271,7 +227,7 @@
             <div class="content">
                 <h3>Chả cốm</h3>
                 <p>Chả cốm là một món ăn nổi tiếng trong thế giới ẩm thực tinh tế của Hà Nội. </p>
-                <a href="https://www.dienmayxanh.com/vao-bep/cach-lam-cha-com-ha-noi-thom-ngon-dung-vi--01063" class="btn">Xem thêm</a>
+                <a href="https://www.dienmayxanh.com/vao-bep/cach-lam-cha-com-ha-noi-thom-ngon-dung-vi--01063" class="btn">Xem chi tiết</a>
             </div>
         </div>
         <div class="box">
@@ -279,7 +235,7 @@
             <div class="content">
                 <h3>Bún bò</h3>
                 <p>Món bún bò Huế dễ dàng làm xiêu lòng những khẩu vị khó tính nhất.</p>
-                <a href="https://vinpearl.com/vi/bun-bo-hue-dac-san-dan-da-lam-say-long-biet-bao-thuc-khach" class="btn">Xem thêm</a>
+                <a href="https://vinpearl.com/vi/bun-bo-hue-dac-san-dan-da-lam-say-long-biet-bao-thuc-khach" class="btn">Xem chi tiết</a>
             </div>
         </div>
         <div class="box">
@@ -287,7 +243,7 @@
             <div class="content">
                 <h3>Bún Hến Mai Xá</h3>
                 <p>Bún hến Mai Xá là đặc sản của làng Mai Xá xã Gio Mai, Gio Linh, Quảng Trị.</p>
-                <a href="https://thegioiamthuc.com/bun-hen-mai-xa/" class="btn">Xem thêm</a>
+                <a href="https://thegioiamthuc.com/bun-hen-mai-xa/" class="btn">Xem chi tiết</a>
             </div>
         </div>
         <div class="box">
@@ -295,7 +251,7 @@
             <div class="content">
                 <h3>Cá bống sống trà</h3>
                 <p>Nhắc đến đặc sản Quảng Ngãi đừng quên cá bống Sông Trà, đây là loại đặc sản mà thiên nhiên đã ưu ái cho vùng đất này.</p>
-                <a href="https://dacsanchinhgoc.vn/ca-bong-song-tra-14.html" class="btn">Xem thêm</a>
+                <a href="https://dacsanchinhgoc.vn/ca-bong-song-tra-14.html" class="btn">Xem chi tiết</a>
             </div>
         </div>
         <div class="box">
@@ -303,7 +259,7 @@
             <div class="content">
                 <h3>Chả cá Quy Nhơn</h3>
                 <p>Món ăn dân dã ấy xuất phát từ rất lâu đời trong các làng chài đánh cá dọc bờ biển Quy Nhơn.</p>
-                <a href="https://dacsanngon3mien.net/san-pham/cha-ca-quy-nhon/" class="btn">Xem thêm</a>
+                <a href="https://dacsanngon3mien.net/san-pham/cha-ca-quy-nhon/" class="btn">Xem chi tiết</a>
             </div>
         </div>
         <div class="box">
@@ -311,7 +267,7 @@
             <div class="content">
                 <h3>Mì quảng</h3>
                 <p>Một món ăn không thể bỏ qua nếu bạn có dịp ghé thăm Đà Nẵng</p>
-                <a href="https://www.tourismdanang.vn/am-thuc/mi-quang-da-nang/" class="btn">Xem thêm</a>
+                <a href="https://www.tourismdanang.vn/am-thuc/mi-quang-da-nang/" class="btn">Xem chi tiết</a>
             </div>
         </div>
         <div class="box">
@@ -319,7 +275,7 @@
             <div class="content">
                 <h3>Bánh tét lá cẩm</h3>
                 <p>Bánh tét lá cẩm là một loại bánh thơm ngon, là đặc sản miền Tây Nam Bộ</p>
-                <a href="https://chinhgoc.vn/banh-tet-la-cam" class="btn">Xem thêm</a>
+                <a href="https://chinhgoc.vn/banh-tet-la-cam" class="btn">Xem chi tiết</a>
             </div>
         </div>
         <div class="box">
@@ -327,7 +283,7 @@
             <div class="content">
                 <h3>Cá lóc nướng trui</h3>
                 <p>Cá lóc nướng trui với hương vị thơm ngon, thịt cá béo mềm, dậy mùi thơm lừng</p>
-                <a href="https://mia.vn/cam-nang-du-lich/kham-pha-am-thuc-mien-tay-dan-da-voi-ca-loc-nuong-trui-can-tho-4794" class="btn">Xem thêm</a>
+                <a href="https://mia.vn/cam-nang-du-lich/kham-pha-am-thuc-mien-tay-dan-da-voi-ca-loc-nuong-trui-can-tho-4794" class="btn">Xem chi tiết</a>
             </div>
         </div>
         <div class="box">
@@ -335,14 +291,133 @@
             <div class="content">
                 <h3>Mật ong Gia Lai</h3>
                 <p>Mật ong rừng là một đặc sản Gia Lai không thể thiếu.</p>
-                <a href="https://dacsantamdao.vn/mat-ong-rung-gia-lai/" class="btn">Xem thêm</a>
+                <a href="https://dacsantamdao.vn/mat-ong-rung-gia-lai/" class="btn">Xem chi tiết</a>
             </div>
         </div>
     </div>
 
 </section>
 
+<!-- Khách sạn -->
+<section class="hotel" id="hotel">
 
+    <h1 class="heading">
+        <span>h</span>
+        <span>o</span>
+        <span>t</span>
+        <span>e</span>
+        <span>l</span>
+    </h1>
+
+    <div class="box-container">
+            <div class="box">
+                <img src="images/JW Marriott Hà Nội.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fa-solid fa-hotel"></i> JW Marriott Hà Nội </h3>
+                    <p>Travelers' Choice Awards 2021 Best of the Best-do TripAdvisor bình chọn.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> 5.392.800 VND <span> 5.550.000 VND</span> </div>
+                    <a href="book-hotel.html" class="btn">Đặt ngay</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Vinpearl Resort & Spa Ha Long.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fa-solid fa-hotel"></i> Vinpearl Resort & Spa Hạ Long </h3>
+                    <p>Vinpearl Resort & Spa Hạ Long - viên ngọc quý giữa lòng Quảng Ninh. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> 2.742.857 VND <span>3.168.000 VND</span> </div>
+                    <a href="book-hotel.html" class="btn">Đặt ngay</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Vinpearl Resort & Spa Da Nang.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fa-solid fa-hotel"></i> Vinpearl Resort & Spa Đà Nẵng </h3>
+                    <p>trải nghiệm nghỉ dưỡng trong mơ với chất lượng dịch vụ đạt tiêu chuẩn 5 sao.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> 6.670.000 VND <span>7.776.000 VND</span> </div>
+                    <a href="book-hotel.html" class="btn">Đặt ngay</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Dalat Edensee Resort & Spa.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fa-solid fa-hotel"></i> Dalat Edensee Resort & Spa</h3>
+                    <p>Khu Nghỉ Dưỡng thanh lịch, tiện nghi - Một Bán Đảo bí ẩn nép mình dưới những rặng thông.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> 3.600.000 VND <span>4.340.000 VND</span> </div>
+                    <a href="book-hotel.html" class="btn">Đặt ngay</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="images/Vinpearl Luxury Nha Trang.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fa-solid fa-hotel"></i> Vinpearl Luxury Nha Trang </h3>
+                    <p>điểm đến dành cho những du khách trân trọng từng giây phút bên người mình yêu thương.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> 5.700.000 VND <span>6.900.000 VND</span> </div>
+                    <a href="book-hotel.html" class="btn">Đặt ngay</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/La Veranda Resort Phu Quoc.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fa-solid fa-hotel"></i> La Veranda Resort Phú Quốc </h3>
+                    <p>Khu nghỉ dưỡng La Veranda Phú Quốc đạt tiêu chuẩn 5 sao - một lâu đài kiểu Pháp bền bờ biển</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 4.780.000 VND <span> 5.850.000 VND</span> </div>
+                    <a href="book-hotel.html" class="btn">Đặt ngay</a>
+                </div>
+            </div>
+
+        
+
+    </div>
+
+</section>
 
 <!-- Giới thiệu nhóm  -->
 
@@ -461,11 +536,11 @@
                 <input type="email" placeholder="Nhập email">
             </div>
             <div class="inputBox">
-                <input type="number" placeholder="Số điện thoại">
+                <input type="text" placeholder="Số điện thoại">
                 <input type="date" placeholder="Ngày sinh">
             </div>
             <textarea placeholder="Lời nhắn..." name="" id="" cols="30" rows="10"></textarea>
-            <input type="submit" class="btn" value="Gửi ">
+            <a href="thanks.html"><input type="submit" class="btn" value="Gửi "></a>
         </form>
 
     </div>
