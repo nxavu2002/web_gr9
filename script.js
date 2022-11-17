@@ -3,7 +3,10 @@ let searchBar = document.querySelector('.search-bar-container');
 let formBtn = document.querySelector('#login-btn');
 let loginForm = document.querySelector('.login-form-container');
 let formClose = document.querySelector('#form-close');
+let reg = document.querySelector('#reg_form')
+let registerForm = document.querySelector('.register-form-container')
 let videoBtn = document.querySelectorAll('.vid-btn');
+const form = document.querySelector('.Form')
 
 
 // Tìm kiếm
@@ -20,6 +23,19 @@ formBtn.addEventListener('click', () =>{
 formClose.addEventListener('click', () =>{
     loginForm.classList.remove('active');
 });
+reg.addEventListener('click',() => {
+    loginForm.classList.remove('active');
+})
+
+// Đăng ký
+
+reg.addEventListener('click',() => {
+    registerForm.classList.add('active');
+})
+formClose.addEventListener('click', () =>{
+    registerForm.classList.remove('active');
+});
+
 
 // video
 videoBtn.forEach(btn =>{
