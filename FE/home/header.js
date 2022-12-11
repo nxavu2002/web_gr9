@@ -1,3 +1,30 @@
+// //Đóng, mở menu-bar
+// var header = document.getElementById('header');
+// console.log(header); 
+// var menuBar = document.getElementById('menu-bar');
+// // console.log(menuBar)
+// var headerHeight = header.clientHeight;
+//  menuBar.onclick = function()  {
+// console.log(header.clientHeight)
+// var isClose = header.clientHeight  === headerHeight;
+// console.log(isClose)
+// if (isClose){
+//     header.style.height = 'auto';
+// } 
+// else {
+//     header.style.height = null;
+// }
+//  }
+
+// Tự động đóng khi chọn menu-bar
+// var menuItems = document.querySelectorAll('.navbar a[href*="#"]');
+// for (var i=0; i<menuItems.length; i++) {
+//     var menuItem = menuItems[i];
+    
+//     menuItem.onclick = function() {
+//         header.style.height = null; 
+//     }
+// }
 const accessToken = '';
 var user;
 function checkToken (){

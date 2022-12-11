@@ -22,7 +22,7 @@ async function login(event){
     res = await result.json(); 
     if (res.status === 'OK'){
         console.log('Got the token', res.data)
-        window.location = "http://127.0.0.1:5500/web_gr9/FE/home/index.html"
+        window.location = "http://127.0.0.1:5500/FE/home/index.html"
         window.sessionStorage.setItem("accessToken", res.data);
         alert('Success')
     }else {
