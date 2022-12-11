@@ -2,6 +2,7 @@
 let searchBtn = document.querySelector('#search-btn');
 let searchBar = document.querySelector('.search-bar-container');
 let videoBtn = document.querySelectorAll('.vid-btn');
+const form = document.querySelector('.Form')
 
 // video
 videoBtn.forEach(btn =>{
