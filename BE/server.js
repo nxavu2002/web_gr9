@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 const port = 9999;
 var cors = require('cors');
 const mongoose = require('mongoose');
-
 const authenRoute = require('./routes/authen')
 mongoose.set('strictQuery', true);
 mongoose.connect('mongodb://localhost:27017/login-travel-db', {

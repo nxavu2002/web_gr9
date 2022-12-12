@@ -44,6 +44,10 @@
         font-weight: 800;
     }
 
+    header .navbar {
+        display: block;
+    }
+
     .aboutus {
         overflow: hidden;
     }

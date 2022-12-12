@@ -36,26 +36,5 @@ var swiper = new Swiper(".aboutus-slider", {
     },
 });
 
-// Phần slider
-var swiper = new Swiper(".hotel-slider", {
-    spaceBetween: 15,
-    loop:true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false
-    },
-    breakpoints: {
-        640: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-    },
-});
-
 // backtop
 

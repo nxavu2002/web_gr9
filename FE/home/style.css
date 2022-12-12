@@ -90,6 +90,7 @@ header{
   align-items: center;
   justify-content: space-between;
   padding:2rem 9%;
+  height: 68px;
 }
 
 header .icons{
@@ -418,6 +419,11 @@ header .search-bar-container label:hover{
 }
 
 /* đặt tour */
+.book{
+  min-height: 100vh;
+  width: 100%;
+}
+
 .book .row{
   display: flex;
   flex-wrap: wrap;
@@ -437,7 +443,7 @@ header .search-bar-container label:hover{
   flex:1 1 40rem;
   padding:2rem;
   box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-  border-radius: .5rem;
+  border-radius: .5rem
 }
 
 .book .row form .inputBox{
@@ -457,6 +463,16 @@ header .search-bar-container label:hover{
   font-size: 2rem;
   padding:1rem 0;
   color:#666;
+}
+
+.book .row form .selection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+}
+
+.book .row form .selection .btn{
+  width: 49%;
 }
 
 /* tour */
@@ -880,75 +896,6 @@ header .search-bar-container label:hover{
 }
 
 
-
-/* Màn hình  */
-
-@media (max-width:1200px){
-
-  html{
-    font-size: 60%;
-  }
-
-}
-
-@media (max-width:991px){
-
-  header{
-    padding:2rem;
-  }
-
-  section{
-    padding:2rem;
-  }
-
-}
-
-@media (max-width:768px){
-
-  #menu-bar{
-    display: initial;
-  }
-
-  header .navbar{
-    position: absolute;
-    top: 100%; 
-    right: 0; 
-    left: 0;
-    background: #333;
-    border-top: 0.1rem solid rgba(255,255,255,.2);
-    padding: 1rem 2rem;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-
-  header .navbar.active{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-
-  header .navbar a{
-    display: block;
-    border-radius: .5rem;
-    padding:1.5rem;
-    margin:1.5rem 0;    
-    background:#222;
-  }
-
-}
-
-@media (max-width:450px){
-
-  html{
-    font-size: 50%;
-  }
-
-  .heading span{
-    font-size: 2.5rem;
-  }
-
-  .contact .row form .inputBox input{
-    width:100%;
-  }
-
-}
 
 #backtop {
   width: 50px;
